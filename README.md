@@ -1,2 +1,2 @@
-Airfare checker to monitor airprices. 
-=======
+Flight:
+Monitor airfare prices
