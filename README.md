@@ -1,2 +1,1 @@
-Flight:
-Monitor airfare prices
+Monitor Airfare prices
