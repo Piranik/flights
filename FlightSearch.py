@@ -4,7 +4,7 @@ import urllib2
 class FlightSearch(object):
   
   def __init__(self, goingFrom, goingTo, roundTrip=false):
-    json_data = urllib2.urlopen('http://www.flightradar24.com/zones/full_all.json')
+	json_data = urllib2.urlopen('http://www.flightradar24.com/zones/full_all.json')
 	self.data = json.load(json_data)
 	json_data.close() 
     self.goingFrom=goingFrom
