@@ -3,26 +3,26 @@ import urllib2
 
 class FlightSearch(object):
   
-  def __init__(self, goingFrom, goingTo, roundTrip=False):
-    json_data = urllib2.urlopen('http://www.flightradar24.com/zones/full_all.json')
-	self.data = json.load(json_data)
-	json_data.close() 
-    self.goingFrom=goingFrom
-    self.goingTo=goingTo
-    self.roundTrip=roundTrip
-    # Parse this stuff later from the JSON file. 
-    price = 
-    return price
+	def __init__(self, goingFrom, goingTo, roundTrip=False):
+		json_data = urllib2.urlopen('http://www.flightradar24.com/zones/full_all.json')
+		self.data = json.load(json_data)
+		json_data.close() 
+		self.goingFrom=goingFrom
+		self.goingTo=goingTo
+		self.roundTrip=roundTrip
+		# Parse this stuff later from the JSON file. 
+		price = 
+		return price
 
 	# in case this is a private class we need getters/setters    
-  def getDates(self, departureDate, returnDate = None):
+	def getDates(self, departureDate, returnDate = None):
   	# Do fancy JSON stuff here
 
-  def disp_goingfrom(self):
-  	return self.goingfrom
+	def disp_goingfrom(self):
+		return self.goingfrom
 
-  def disp_goingto(self):
-  	return self.goingTo
+	def disp_goingto(self):
+		return self.goingTo
 
 # Means that if you run this script directly from file instead of importing... do this:
 if __name__ == '__main__':
