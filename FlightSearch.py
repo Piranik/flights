@@ -3,8 +3,8 @@ import urllib2
 
 class FlightSearch(object):
   
-  def __init__(self, goingFrom, goingTo, roundTrip=false):
-	json_data = urllib2.urlopen('http://www.flightradar24.com/zones/full_all.json')
+  def __init__(self, goingFrom, goingTo, roundTrip=False):
+    json_data = urllib2.urlopen('http://www.flightradar24.com/zones/full_all.json')
 	self.data = json.load(json_data)
 	json_data.close() 
     self.goingFrom=goingFrom
@@ -15,7 +15,7 @@ class FlightSearch(object):
     return price
 
 	# in case this is a private class we need getters/setters    
-  def getDates(self, departureDate, returnDate = null):
+  def getDates(self, departureDate, returnDate = None):
   	# Do fancy JSON stuff here
 
   def disp_goingfrom(self):
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 	if roundtrip == 'Y':
 		returnDate=raw_input("When are you returning (MM/DD/YYYY)")
 	else:
-		returnDate = null
+		returnDate = None
 	print('\nLoading your data...\n')
 	try:
 		myflight=FlightSearch(startPlace, endPlace)
